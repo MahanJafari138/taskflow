@@ -1,0 +1,348 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  background: #1a1a2e;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+  width: 625px;
+  border-radius: 12px;
+  background-color: #f5f0e6;
+}
+
+.box:hover {
+  transition: 0.35s;
+  box-shadow: 1px 1px 5px 2px #d4af37;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.Headline {
+  color: #1a1a2e;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.do-work-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.input-style {
+  width: 230px;
+  height: 38px;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 1rem;
+  outline: none;
+  background-color: #1a1a2e;
+  color: #f5f0e6;
+}
+
+.input-style:hover {
+  transition: 0.35s;
+  box-shadow: 1px 1px 5px 2px #d4af37;
+}
+
+.button-Direction {
+  display: flex;
+  justify-content: center;
+}
+
+.button-generate {
+  width: 285px;
+  height: 35px;
+  background-color: #d4af37;
+  color: #f5f0e6;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-generate:hover {
+  background-color: #f5f0e6;
+  border: 1.5px solid #d4af37;
+  color: #d4af37;
+  transition: 0.35s;
+}
+
+.Task-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.Task-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.Task-container::-webkit-scrollbar-thumb {
+  background-color: #d4af37;
+  border-radius: 10px;
+}
+
+.Task-container::-webkit-scrollbar-track {
+  background-color: #f5f0e6;
+}
+
+.task-titel {
+  position: static;
+  width: 60px;
+  color: #1a1a2e;
+  font-size: 17px;
+  font-weight: bold;
+  border: 1.5px solid #1a1a2e;
+  border-radius: 6px;
+  padding: 8px 3px;
+  text-align: center;
+}
+
+.task-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  background-color: #1a1a2e;
+  width: 100%;
+  max-width: 140px;
+  height: auto;
+  min-height: 100px;
+  padding: 10px;
+  border-radius: 6px;
+  color: #f5f0e6;
+  box-shadow: 1px 1px 5px 2px #d4af37;
+}
+
+.tasks-box-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 50px;
+}
+
+.button-in-box {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  min-height: 25px;
+  background-color: #d4af37;
+  color: #f5f0e6;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button-in-box:hover {
+  background-color: #f5f0e6;
+  transition: 0.35s;
+}
+
+.task-text-row {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+}
+
+.delete-icon-style {
+  width: 15px;
+}
+
+.progress-bar-outer {
+  display: flex;
+  align-items: center;
+  background-color: #2d2d4d;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.progress-bar-inner {
+  background-color: #d4af37;
+  height: 17px;
+  border-radius: 10px;
+}
+
+@media (max-width: 593px) {
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    height: 500px;
+    width: 380px;
+    border-radius: 10px;
+    background-color: #f5f0e6;
+  }
+
+  .box:hover {
+    transition: 0.35s;
+    box-shadow: 1px 1px 5px 2px #d4af37;
+  }
+
+  .input-style {
+    width: 150px;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 1em;
+    outline: none;
+    background-color: #1a1a2e;
+    color: #f5f0e6;
+  }
+
+  .input-style:hover {
+    transition: 0.35s;
+    box-shadow: 1px 1px 5px 2px #d4af37;
+  }
+
+  .button-generate {
+    width: 220px;
+    height: 30px;
+    background-color: #d4af37;
+    color: #f5f0e6;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .button-generate:hover {
+    background-color: #f5f0e6;
+    border: 1.5px solid #d4af37;
+    color: #d4af37;
+    transition: 0.35s;
+  }
+
+  .task-titel {
+    position: static;
+    width: 50px;
+    color: #1a1a2e;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1.5px solid #1a1a2e;
+    border-radius: 6px;
+    padding: 8px 3px;
+    text-align: center;
+  }
+
+  .tasks-box-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 10px;
+  }
+
+  .button-in-box:hover {
+    background-color: #f5f0e6;
+    transition: 0.35s;
+  }
+}
+
+@media (max-width: 375px) {
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    height: 500px;
+    width: 225px;
+    border-radius: 10px;
+    background-color: #f5f0e6;
+  }
+
+  .box:hover {
+    transition: 0.35s;
+    box-shadow: 1px 1px 5px 2px #d4af37;
+  }
+
+  .tasks-box-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .do-work-input {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: space-around;
+    font-size: 5px;
+  }
+
+  .input-style {
+    width: 93px;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 2.15em;
+    outline: none;
+    font-weight: bold;
+    background-color: #1a1a2e;
+    color: #f5f0e6;
+  }
+
+  .input-style:hover {
+    transition: 0.35s;
+    box-shadow: 1px 1px 5px 2px #d4af37;
+  }
+
+  .button-generate {
+    width: 175px;
+    height: 30px;
+    background-color: #d4af37;
+    color: #f5f0e6;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .button-generate:hover {
+    background-color: #f5f0e6;
+    border: 1.5px solid #d4af37;
+    color: #d4af37;
+    transition: 0.35s;
+  }
+
+  .task-titel {
+    position: static;
+    width: 45px;
+    color: #1a1a2e;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 1.5px solid #1a1a2e;
+    border-radius: 6px;
+    padding: 8px 3px;
+    text-align: center;
+  }
+
+  .delete-icon-style {
+    width: 12px;
+  }
+
+  .button-in-box:hover {
+    background-color: #f5f0e6;
+    transition: 0.35s;
+  }
+}
