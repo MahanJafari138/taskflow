@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>TaskFlow</title>
+  </head>
+  <body>
+    <div class="box">
+      <div class="container">
+        <h2 class="Headline">To Do List</h2>
+        <div class="do-work-input">
+          <input
+            class="input-style"
+            id="inputWork"
+            type="text"
+            placeholder="کارت برای امروز چیه"
+          />
+          <input
+            class="input-style"
+            id="inputCategory"
+            type="text"
+            placeholder="دسته بندی کارت یادت نره"
+          />
+        </div>
+        <div class="button-Direction">
+          <button class="button-generate" id="clickGenerate">ساخت لیست</button>
+        </div>
+
+        <div class="Task-container"></div>
+      </div>
+      <div class="progress-bar-outer">
+        <div class="progress-bar-inner" id="progressInner"></div>
+      </div>
+    </div>
+    <script src="assets/js/code.js"></script>
+  </body>
+</html>
